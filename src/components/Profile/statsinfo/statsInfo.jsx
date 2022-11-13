@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import css from './statsInfo.module.css';
+import { changeNumber } from 'utils';
 
 export const StatsInfo = ({ followers, views, likes }) => {
-  console.log(new Intl.NumberFormat().format(views));
-  const numberViews = new Intl.NumberFormat('en-US').format(views);
-  const numberFollowers = new Intl.NumberFormat('en-US').format(followers);
-  const numberLikes = new Intl.NumberFormat('en-US').format(likes);
+  const numberViews = changeNumber(views);
+  const numberFollowers = changeNumber(followers);
+  const numberLikes = changeNumber(likes);
   return (
     <ul className={css.stats}>
       <li className={css.item}>

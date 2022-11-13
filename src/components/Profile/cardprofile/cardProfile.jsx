@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { DescriptionInfo } from 'components/descriptioninfo/descriptionIngo';
-import { StatsInfo } from 'components/statsinfo/statsInfo';
+import { DescriptionInfo } from 'components/Profile/descriptioninfo/descriptionIngo';
+import { StatsInfo } from 'components/Profile/statsinfo/statsInfo';
 import css from './cardProfile.module.css';
 
 export const CardProfile = ({ username, tag, location, avatar, stats }) => {
