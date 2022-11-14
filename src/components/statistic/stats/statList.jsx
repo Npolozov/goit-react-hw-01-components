@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import css from './statList.module.css';
 
 export const StatsInfo = ({ stats }) => {
-  console.log(stats);
   return (
     <ul className={css.stat_list}>
       {stats.map(({ id, label, percentage }) => (

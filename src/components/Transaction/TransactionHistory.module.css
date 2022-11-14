@@ -1,0 +1,31 @@
+table {
+  width: 500px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead {
+  border-bottom: 1px solid black;
+}
+
+thead th:nth-child(1) {
+  width: 40%;
+}
+
+thead th:nth-child(2) {
+  width: 30%;
+}
+
+thead th:nth-child(3) {
+  width: 30%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+th:not(:last-child) {
+  border-right: 1px solid black;
+}

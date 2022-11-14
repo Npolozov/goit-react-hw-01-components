@@ -3,10 +3,11 @@ import css from './renderStatsList.module.css';
 import { createColor } from 'utils';
 
 export const RenderList = ({ label, percentage }) => {
+  console.log(label);
   return (
     <li className={css.item} style={{ backgroundColor: createColor() }}>
       <span className={css.label}>{label}</span>
-      <span className={css.percentage}>{percentage}</span>
+      <span className={css.percentage}>{percentage}%</span>
     </li>
   );
 };

@@ -1,9 +1,11 @@
 import { CardProfile } from 'components/Profile/cardprofile/cardProfile';
 import { StatsTitle } from 'components/Statistic/title_two/statsTitle';
 import { FriendList } from 'components/Friends/friendList';
+import { TransactionHistory } from 'components/Transaction/TransactionHistory';
 import users from 'Path/user.json';
 import data from 'Path/data.json';
 import friends from 'Path/friends.json';
+import transactions from 'Path/transactions.json';
 // import css from './App.module.css';
 export const App = () => {
   return (
@@ -17,6 +19,7 @@ export const App = () => {
       />
       <StatsTitle text="Upload stats" stats={data} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
