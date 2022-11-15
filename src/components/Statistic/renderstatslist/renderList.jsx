@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import css from './renderStatsList.module.css';
 import { createColor } from 'utils';
+import css from './renderList.module.css';
 
 export const RenderList = ({ label, percentage }) => {
   console.log(label);
