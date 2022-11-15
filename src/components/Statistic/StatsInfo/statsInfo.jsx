@@ -1,4 +1,4 @@
-import { RenderList } from 'components/Statistic/renderstatslist/renderStatsLista';
+import { RenderList } from 'components/Statistic/renderstatslist/renderList';
 import PropTypes from 'prop-types';
 import css from './statList.module.css';
 

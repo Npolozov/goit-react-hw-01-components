@@ -1,4 +1,4 @@
-import { StatsInfo } from 'components/Statistic/stats/statList';
+import { StatsInfo } from 'components/Statistic/StatsInfo/statsInfo';
 import PropTypes from 'prop-types';
 import data from '../../../data.json';
 
