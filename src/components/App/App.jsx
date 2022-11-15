@@ -10,7 +10,14 @@ import { Box } from './Box';
 
 export const App = () => {
   return (
-    <Box bg="tomato">
+    <Box
+      bg="orange"
+      p="50px"
+      display="flex"
+      flexDirection="column"
+      alignContent="center"
+      alignItems="center"
+    >
       <CardProfile
         username={users.username}
         tag={users.tag}

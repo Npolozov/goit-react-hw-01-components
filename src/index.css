@@ -8,11 +8,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column;
   align-content: center;
-  align-items: center;
-  padding: 30px;
+  align-items: center; */
 }
 
 code {
