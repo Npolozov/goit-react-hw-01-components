@@ -2,10 +2,10 @@ import { CardProfile } from 'components/Profile/cardprofile/cardProfile';
 import { StatsTitle } from 'components/Statistic/title_two/statsTitle';
 import { FriendList } from 'components/Friends/friendList';
 import { TransactionHistory } from 'components/Transaction/TransactionHistory';
-import users from 'path/user.json';
-import data from 'path/data.json';
-import friends from 'path/friends.json';
-import transactions from 'path/transactions.json';
+import users from '../path/user.json';
+import data from '../path/data.json';
+import friends from '../path/friends.json';
+import transactions from '../path/transactions.json';
 // import css from './App.module.css';
 export const App = () => {
   return (
