@@ -1,5 +1,5 @@
 import { CardProfile } from 'components/Profile/cardprofile/cardProfile';
-import { StatsTitle } from 'components/Statistic/title_two/statsTitle';
+import { StatsTitle } from 'components/Statistic/titleTwo/statsTitle';
 import { FriendList } from 'components/Friends/friendList';
 import { TransactionHistory } from 'components/Transaction/TransactionHistory';
 import users from '../../user.json';
