@@ -1,3 +1,7 @@
+.friend_list {
+  padding: 50px 0px;
+}
+
 .item {
   display: flex;
   align-items: center;

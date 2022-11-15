@@ -6,10 +6,11 @@ import users from '../../path/user.json';
 import data from '../../path/data.json';
 import friends from '../../path/friends.json';
 import transactions from '../../path/transactions.json';
-// import css from './App.module.css';
+import { Box } from './Box';
+
 export const App = () => {
   return (
-    <>
+    <Box bg="tomato">
       <CardProfile
         username={users.username}
         tag={users.tag}
@@ -20,6 +21,6 @@ export const App = () => {
       <StatsTitle text="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </>
+    </Box>
   );
 };
