@@ -5,7 +5,7 @@ import { createColor } from 'utils';
 export const TransactionHistory = ({ items }) => {
   return (
     <table>
-      <thead style={{ backgroundColor: createColor() }}>
+      <thead className={css.thead} style={{ backgroundColor: createColor() }}>
         <tr>
           <th>Type</th>
           <th>Amount</th>
