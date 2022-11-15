@@ -1,6 +1,6 @@
 import { StatsInfo } from 'components/Statistic/stats/statList';
 import PropTypes from 'prop-types';
-import data from 'path/data.json';
+import data from 'components/path/data.json';
 
 import css from './statsTitle.module.css';
 
