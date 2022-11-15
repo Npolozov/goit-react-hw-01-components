@@ -13,6 +13,6 @@ export const StatsTitle = ({ text }) => {
   );
 };
 
-// StatsTitle.propTypes = {
-//   text: PropTypes.string.isRequired,
-// };
+StatsTitle.propTypes = {
+  text: PropTypes.string.isRequired,
+};
