@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import { createColor } from 'utils';
-import css from './renderList.module.css';
+import { Item, Label, Percentage } from './renderList.styled';
 
 export const RenderList = ({ label, percentage }) => {
   console.log(label);
   return (
-    <li className={css.item} style={{ backgroundColor: createColor() }}>
-      <span className={css.label}>{label}</span>
-      <span className={css.percentage}>{percentage}%</span>
-    </li>
+    <Item style={{ backgroundColor: createColor() }}>
+      <Label>{label}</Label>
+      <Percentage>{percentage}%</Percentage>
+    </Item>
   );
 };
 

@@ -1,26 +1,26 @@
 import PropTypes from 'prop-types';
-import css from './statsInfo.module.css';
 import { changeNumber } from 'utils';
+import { Stats, Item, Label, Quantity } from './statsInfo.styled';
 
 export const StatsInfo = ({ followers, views, likes }) => {
   const numberViews = changeNumber(views);
   const numberFollowers = changeNumber(followers);
   const numberLikes = changeNumber(likes);
   return (
-    <ul className={css.stats}>
-      <li className={css.item}>
-        <span className={css.label}>stats</span>
-        <span className={css.quantity}>{numberFollowers}</span>
-      </li>
-      <li className={css.item}>
-        <span className={css.label}>Views</span>
-        <span className={css.quantity}>{numberViews}</span>
-      </li>
-      <li className={css.item}>
-        <span className={css.label}>Likes</span>
-        <span className={css.quantity}>{numberLikes}</span>
-      </li>
-    </ul>
+    <Stats>
+      <Item>
+        <Label>stats</Label>
+        <Quantity>{numberFollowers}</Quantity>
+      </Item>
+      <Item>
+        <Label>Views</Label>
+        <Quantity>{numberViews}</Quantity>
+      </Item>
+      <Item>
+        <Label>Likes</Label>
+        <Quantity>{numberLikes}</Quantity>
+      </Item>
+    </Stats>
   );
 };
 

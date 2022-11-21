@@ -1,14 +1,20 @@
 import PropTypes from 'prop-types';
-import css from './descriptionInfo.module.css';
+import {
+  Description,
+  Avatar,
+  Name,
+  Tag,
+  Location,
+} from './descriptionIngo.styled';
 
 export const DescriptionInfo = ({ avatar, username, tag, location }) => {
   return (
-    <div className={css.description}>
-      <img src={avatar} alt={username} className={css.avatar} />
-      <p className={css.name}>{username}</p>
-      <p className={css.tag}>@{tag}</p>
-      <p className={css.location}>{location}</p>
-    </div>
+    <Description>
+      <Avatar src={avatar} alt={username} />
+      <Name>{username}</Name>
+      <Tag>@{tag}</Tag>
+      <Location>{location}</Location>
+    </Description>
   );
 };
 

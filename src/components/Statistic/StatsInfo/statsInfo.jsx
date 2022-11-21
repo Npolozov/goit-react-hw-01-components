@@ -1,14 +1,14 @@
 import { RenderList } from 'components/Statistic/renderstatslist/renderList';
 import PropTypes from 'prop-types';
-import css from './statList.module.css';
+import { List } from './statsInfo.styled';
 
 export const StatsInfo = ({ stats }) => {
   return (
-    <ul className={css.stat_list}>
+    <List>
       {stats.map(({ id, label, percentage }) => (
         <RenderList key={id} label={label} percentage={percentage} />
       ))}
-    </ul>
+    </List>
   );
 };
 

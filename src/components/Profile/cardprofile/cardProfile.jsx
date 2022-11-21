@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { DescriptionInfo } from 'components/Profile/descriptioninfo/descriptionIngo';
 import { StatsInfo } from 'components/Profile/statsinfo/statsInfo';
-import css from './cardProfile.module.css';
+import { Conteiner } from './cardProfile.styled';
 
 export const CardProfile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className={css.profile}>
+    <Conteiner>
       <DescriptionInfo
         key={username}
         username={username}
@@ -18,7 +18,7 @@ export const CardProfile = ({ username, tag, location, avatar, stats }) => {
         views={stats.views}
         likes={stats.likes}
       />
-    </div>
+    </Conteiner>
   );
 };
 

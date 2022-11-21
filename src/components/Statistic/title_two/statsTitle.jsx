@@ -1,16 +1,8 @@
-import { StatsInfo } from 'components/Statistic/StatsInfo/statsInfo';
 import PropTypes from 'prop-types';
-import data from '../../../path/data.json';
-
-import css from './statsTitle.module.css';
+import { Title } from './statsTitle.styled';
 
 export const StatsTitle = ({ text }) => {
-  return (
-    <section className={css.statistics}>
-      <h2 className={css.title}>{text}</h2>
-      <StatsInfo stats={data} />
-    </section>
-  );
+  return <div>{text && <Title>{text}</Title>}</div>;
 };
 
 StatsTitle.propTypes = {
