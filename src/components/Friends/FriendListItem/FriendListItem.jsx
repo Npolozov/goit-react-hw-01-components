@@ -1,18 +1,21 @@
 import PropTypes from 'prop-types';
-import { Name, Online, Img, Item } from './FriendListItem.styled';
+import { Name, Online, Img } from './FriendListItem.styled';
 
-export const FriendListItem = ({ isOnline, name, avatar }) => {
+export const FriendListItem = ({ friend: { isOnline, name, avatar } }) => {
   return (
-    <Item>
+    <>
       <Online isOnline={isOnline}>{isOnline}</Online>
       <Img src={avatar} alt={name} />
       <Name>{name}</Name>
-    </Item>
+    </>
   );
 };
 
 FriendListItem.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool.isRequired,
+  friend: PropTypes.exact({
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
 };
