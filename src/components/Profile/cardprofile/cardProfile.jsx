@@ -3,7 +3,15 @@ import { DescriptionInfo } from 'components/Profile/descriptioninfo/descriptionI
 import { StatsInfo } from 'components/Profile/statsinfo/statsInfo';
 import { Conteiner } from './cardProfile.styled';
 
-export const CardProfile = ({ username, tag, location, avatar, stats }) => {
+export const CardProfile = ({
+  users: {
+    username,
+    tag,
+    location,
+    avatar,
+    stats: { followers, views, likes },
+  },
+}) => {
   return (
     <Conteiner>
       <DescriptionInfo
@@ -13,21 +21,19 @@ export const CardProfile = ({ username, tag, location, avatar, stats }) => {
         location={location}
         avatar={avatar}
       />
-      <StatsInfo
-        followers={stats.followers}
-        views={stats.views}
-        likes={stats.likes}
-      />
+      <StatsInfo followers={followers} views={views} likes={likes} />
     </Conteiner>
   );
 };
 
 CardProfile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  stats: PropTypes.exact({
+  users: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+  }),
+  stats: PropTypes.shape({
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
     likes: PropTypes.number.isRequired,
