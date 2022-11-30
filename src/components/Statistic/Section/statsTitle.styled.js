@@ -1,6 +1,11 @@
 import styled from '@emotion/styled';
 
-export const Section = styled.section`
+export const Title = styled.h2`
+  text-align: center;
+  margin-bottom: 20px;
+`;
+
+export const TitleSection = styled.section`
   width: 500px;
   padding: 50px 0;
   margin: 20px;

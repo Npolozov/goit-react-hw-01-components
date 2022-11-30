@@ -1,12 +1,11 @@
 import { CardProfile } from 'components/Profile/cardprofile/cardProfile';
-import { StatsTitle } from 'components/Statistic/title_two/statsTitle';
+import { Section } from 'components/Statistic/Section/Section';
 import { StatsInfo } from 'components/Statistic/StatsInfo/statsInfo';
 import { FriendList } from 'components/Friends/FriendList/friendList';
 import { TransactionHistory } from 'components/Transaction/TransactionHistory';
 import users from 'path/user.json';
 import data from 'path/data.json';
 import friends from 'path/friends.json';
-import { Section } from './App.styled';
 import transactions from '../../path/transactions.json';
 import { Box } from './Box';
 
@@ -21,8 +20,7 @@ export const App = () => {
       alignItems="center"
     >
       <CardProfile users={users} />
-      <Section>
-        <StatsTitle text="Upload stats" stats={data} />
+      <Section text="Upload stats">
         <StatsInfo stats={data} />
       </Section>
       <FriendList friends={friends} />
