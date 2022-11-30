@@ -1,4 +1,4 @@
-import { RenderList } from 'components/Statistic/renderstatslist/RenderList';
+import { List } from 'components/Statistic/renderstatslist/RenderListStatistic';
 import PropTypes from 'prop-types';
 import { List } from './statsInfo.styled';
 
