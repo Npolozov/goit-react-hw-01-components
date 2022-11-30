@@ -1,6 +1,6 @@
 import { CardProfile } from 'components/Profile/cardprofile/cardProfile';
 import { Section } from 'components/Statistic/Section/Section';
-import { StatsInfo } from 'components/Statistic/StatsInfo/statsInfo';
+import { StatsInfo } from 'components/Statistic/StatsInfo/StatsInfo';
 import { FriendList } from 'components/Friends/FriendList/friendList';
 import { TransactionHistory } from 'components/Transaction/TransactionHistory';
 import users from 'path/user.json';
